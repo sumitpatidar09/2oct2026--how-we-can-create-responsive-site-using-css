@@ -61,6 +61,34 @@
                 background-color: #0099CC;
                 height: 68px;
             }
+            main ul{
+                list-style:none;
+            }
+        
+            main ul li button{
+                width: 100%;
+                background-color: #0099CC;
+                border: none;
+                padding: 10px;
+                margin-bottom:10px ;
+            }
+
+            @media only screen and (max-width: 599px) {
+                .col-3,.col-6{width: 100%;
+                float: left;} 
+                
+             }
+            @media only screen and (min-width:600px) and  (max-width:767px) {
+                .col-6{width:80%;
+                      float: left;          
+                } 
+                .col-3{width:20%;} 
+
+                 main > div > aside:last-child{
+                width: 100%;
+             }
+             }
+            
         </style>
     </head>
     <body>
@@ -68,12 +96,27 @@
             <header class="col-12"></header>
             <main class="col-12">
                 <div class="row h-100">
-                    <aside class="col-3 h-100" style="background-color: red;">aside left</aside>
-                    <section class="col-6 h-100">section</section>
+                    <aside class="col-3 h-100" style="background-color: red;">
+                        <ul>
+                            <li>
+                                <button>A</button>
+                            </li>
+                            <li>
+                                <button>B</button>
+                            </li>
+                            <li>
+                                <button>C</button>
+                            </li>
+                            <li>
+                                <button>D</button>
+                            </li>
+                        </ul>
+                    </aside>
+                    <section class="col-6 h-100" style="background-color: aqua;">section</section>
                     <aside class="col-3 h-100" style="background-color: green;">aside right</aside>
                 </div>
             </main>
-            <footer class="col-12"></footer>
+            <footer class="col-12">footer</footer>
         </div>
         
        
